@@ -1,2 +1,24 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<br/>
+<div class="jumbotron">
+  <h1>Blocitoff</h1>
+  <p>Blocitoff is a self-destructing to-do list application!</p>
+  <p>
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>Keeps you organized</h2>
+    <p>Blocitoff will help to keep you life and things organized.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Eliminates forgotten items</h2>
+    <p>Blocitoff will help you keep a list or lists so you don't forget things.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Makes you better looking</h2>
+    <p>Blocitoff will make you better looking: it's scientifically proven to make men look like Ryan Gosling and women look like Shakira.</p>
+  </div>
+</div>
