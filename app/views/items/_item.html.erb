@@ -1,0 +1,19 @@
+<%= content_tag :div, class: "media", id: "item-#{item.id}" do %>
+  <div class="media-body">
+    <small>
+      <div class="row">
+        <div class="col-md-4">
+          <%= item.name %>
+        </div>
+        <div class="col-md-2">
+          <%= item.days_left %>
+        </div>
+        <div class="col-md-1">
+          <% if policy(item).destroy? %>
+            <%= link_to "", [item.user, item], method: :delete, remote: true, class: 'text-center', class: 'glyphicon glyphicon-remove' %>
+          <% end %>
+        </div>
+      </div>
+    </small>
+  </div>
+<% end %>
