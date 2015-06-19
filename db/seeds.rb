@@ -23,7 +23,7 @@ if Rails.env.development?
   users = User.all
 
   # Create Items
-  20.times do
+  30.times do
     Item.create!(
       user: users.sample,
       name: Faker::Lorem.sentence
